@@ -1,0 +1,43 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true"  CodeBehind="CompanyMaster.master.cs" Inherits="AspAddDemo.CompanyMaster" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <table style="width: 100%">
+                <tr>
+                    <td colspan="2" style="text-align: center; background-color: aqua;">
+                        Student Management System
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>
+                        <asp:HyperLink ID="hplHome" Text="Home"  runat="server"  NavigateUrl="~/Home.aspx"></asp:HyperLink> |
+                         <asp:HyperLink ID="hplinsert" Text="Insert student" runat="server" NavigateUrl="~/InsertStudent.aspx" ></asp:HyperLink> |
+                        <asp:HyperLink ID="hplSerch" Text="Search student" runat="server" NavigateUrl="~/SearchStudent.aspx"></asp:HyperLink>
+                    </td>
+                   
+                     
+                </tr>
+                <tr>
+                    <td>
+                        <asp:ContentPlaceHolder ID="cphBody" runat="server"></asp:ContentPlaceHolder>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                </tr>
+
+            </table>
+        </div>
+    </form>
+</body>
+</html>
