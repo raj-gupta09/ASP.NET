@@ -1,0 +1,27 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/CompanyMaster.Master" AutoEventWireup="true" CodeBehind="UniversityMaster.master.cs" Inherits="NestedMasterPageDemo.UniversityMaster" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="cphBody" runat="server">
+    <table style="width:100%">
+        <tr style="width:100%">
+            <td colspan="2" style="background-color:#4ed4f2;font-family:Arial;text-align:center">
+                Our University
+            </td>
+        </tr>
+        <tr>
+            <td style="width:20%;background-color:#d4b3b3;vertical-align:top">
+                <ul>
+                    <li>
+                     <asp:Hyperlink ID="hrlUnivHome" runat="server" Text="Our University Home"></asp:Hyperlink>
+                    </li>
+                     <li>
+                     <asp:Hyperlink ID="hrlDAL" runat="server" Text="Dal"></asp:Hyperlink>
+                    </li>
+                </ul>
+            </td>
+            <td style="width:80%">
+                <asp:ContentPlaceHolder ID="cphUnivBody" runat="server"></asp:ContentPlaceHolder>
+            </td>
+        </tr>
+    </table>
+</asp:Content>

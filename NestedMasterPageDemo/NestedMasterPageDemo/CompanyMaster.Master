@@ -1,0 +1,48 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="CompanyMaster.master.cs" Inherits="NestedMasterPageDemo.CompanyMaster" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <table style="width:100%">
+            <tr>
+                <td style="width:100%;background-color:deepskyblue;color:white;font-family:Algerian;font-size:54px;text-align:center" >
+                    Capgemini
+                </td>
+            </tr>
+            <tr>
+                <td >
+                    <asp:HyperLink ID="hrlHome" runat="server" Text="Home" NavigateUrl="~/Home.aspx"></asp:HyperLink>
+                       &nbsp;&nbsp;&nbsp;| &nbsp;&nbsp;&nbsp;
+                    <asp:HyperLink ID="hrlLnD" runat="server" Text="L&D" NavigateUrl="~/LnDHome.aspx"></asp:HyperLink>
+                          &nbsp;&nbsp;&nbsp;| &nbsp;&nbsp;&nbsp;
+                    <asp:HyperLink ID="hrlSales" runat="server" Text="Sales" NavigateUrl="~/SalesHome.aspx"></asp:HyperLink>
+                        &nbsp;&nbsp;&nbsp;| &nbsp;&nbsp;&nbsp;
+                    <asp:HyperLink ID="hrlUniv" runat="server" Text="Our Univercity"></asp:HyperLink>
+                      
+                </td>
+            </tr>
+            <tr>
+                <td >
+                    <asp:ContentPlaceHolder ID="cphBody" runat="server"></asp:ContentPlaceHolder>
+                </td>
+            </tr>
+            <tr>
+                <td >
+                    &copy  Copiright
+                </td>
+            </tr>
+
+        </table>
+
+    </div>
+    </form>
+</body>
+</html>
